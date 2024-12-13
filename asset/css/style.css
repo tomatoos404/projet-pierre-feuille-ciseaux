@@ -424,6 +424,11 @@ h1 span:last-child{
     border: 2mm ridge rgba(0, 0, 0, 0.9);
 }
 
+.pfc-choice img:hover{
+    transition: transform .2s;
+    transform: scale(1.1);
+}
+
 .announcement{
     position: absolute;
     width: 100%;
