@@ -61,6 +61,21 @@ imgPlayer.addEventListener('click',(e)=>{
     }
 })
 
+let pierre = document.querySelector("#pierre")
+let pvBar = document.querySelector(".pv-bar")
+i = 0
+
+pierre.addEventListener("click", () => {
+    i++;
+    let pv = document.querySelector("#pv_computer");
+    pv.style.backgroundColor = "blue";
+    pv.style.width = `calc(45% - ${4.5 * i}%)`;
+    setTimeout(() => {
+    pv.style.backgroundColor = "yellow";
+    }, 200);
+});
+
+
 
 
 
