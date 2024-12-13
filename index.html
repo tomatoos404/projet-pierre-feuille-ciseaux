@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/asset/css/style.css">
+    <script defer src="/asset/js/script.js"></script>
+    <title>STREET FIGHTER SHI-FU-MI</title>
+</head>
+<body>
+    <header>
+        <div class="button-rules">
+            <button class="rules">RULES</button>
+        </div>
+        <div class="title">
+            <h1><span>STREET FIGHTER</span><span>SHI-FU-MI</span></h1>
+        </div>
+        <div class="play">
+            <a>Press Enter To Play</a>
+        </div>
+        <div class="bottom-header">
+            <small>BY THOMAS TOUNY .FRANCE. ALL RIGHT RESERVED</small>
+        </div>
+    </header>
+    <main>
+        <section class="psodo">
+            <img src="/asset/img/ryu-psodo.webp" alt="ryu">
+            <label for="name">enter your name</label>
+            <input type="text" id="name" name="name" required pattern="[a-Z]">
+            <!-- <input type="submit" value="Start" class="rules"> -->
+            <button id="start" class="rules">Start</button>
+        </section>
+        <section class="player-choice">
+            <div class="button-rules">
+                <button class="rules">RULES</button>
+            </div>
+            <div class="div-center-perso">
+                <div class="img-selected">
+                    <img src="/asset/img/ryu-of-street-fighter.png" alt="">
+                    <div class="div-name-of-player">
+                        <p class="name-of-player">tomatoos</p>
+                    </div>
+                </div>
+                <h2>Select Your Player</h2>
+                <div class="img-selected">
+                    <img src="/asset/img/personnage-street-fighter-ken.png" alt="">
+                    <div class="div-name-of-player">
+                        <p>computer</p>
+                    </div>
+                </div>
+            </div>
+            <div class="perso-select">
+                <div class="div-img-perso">
+                    <button id="select_button_player" class="rules">Select</button>
+                    <div class="img-perso">
+                        <img src="/asset/img/pp-gros-costo.png" alt="pp de personnage costo" data-id="1">
+                        <img src="/asset/img/pp-master.png" alt="pp de master">
+                        <img src="/asset/img/pp-ryu.png" alt="pp de ryu">
+                        <img src="/asset/img/pp-sumo.png" alt="pp de sumo">
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="map-choice">
+            <div class="button-rules">
+                <button class="rules">RULES</button>
+            </div>
+            <h2>choose a map</h2>
+            <div class="div-img-map">
+                <button id="select_button_map" class="rules">Select</button>
+                <div class="img-map">
+                    <img src="/asset/img/map-bouda.jpg" alt="pp de map bouda">
+                    <img src="/asset/img/map-dojo.jpg" alt="pp de map dojo">
+                    <img src="/asset/img/map-japon.jpg" alt="pp de map de japon">
+                    <img src="/asset/img/map-plage.jpg" alt="pp de map plage">
+                </div>
+            </div>
+        </section>
+        <section class="fight">
+            <div id="fight-button-rule" class="button-rules">
+                <button class="rules">RULES</button>
+            </div>
+            <div>
+                <div class="life">
+                    <div class="left-pv">
+                        <img src="/asset/img/pp-ryu.png" alt="">
+                        <div class="pv-bar">
+                            <div class="pv"></div>
+                            <div class="restpv"></div>
+                        </div>
+                    </div>
+                    <p>KO</p>
+                    <div class="right-pv">
+                        <img src="/asset/img/pp-master.png" alt="">
+                        <div class="pv-bar">
+                            <div class="pv"></div>
+                            <div class="restpv"></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="score">
+                    <p>tomatoos</p>
+                    <div><span>1</span>-<span>0</span></div>
+                    <p>computer</p>
+                </div>
+            </div>
+            <div class="pfc-choice">
+                <div id="pierre">
+                    <img src="/asset/img/pierre.png" alt="pierre">
+                </div>
+                <div id="feuille">
+                    <img src="/asset/img/feuille2.png" alt="feuille">
+                </div>
+                <div id="ciseaux">
+                    <img src="/asset/img/ciseaux.jpg" alt="ciseaux">
+                </div>
+            </div>
+            <div class="all-perso">
+                <div class="perso-player">
+                    <img src="/asset/img/ryu-of-street-fighter.png" alt="">
+                </div>
+                <div class="announcement">
+                    <p>fight !</p>
+                    <div>battle<span>1</span></div>
+                </div>
+                <div class="perso-computer">
+                    <img src="/asset/img/personnage-street-fighter-ken.png" alt="">
+                </div>
+            </div>
+        </section>
+    </main>
+</body>
+</html>

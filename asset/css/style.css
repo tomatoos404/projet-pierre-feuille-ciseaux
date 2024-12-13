@@ -1,0 +1,473 @@
+@import url('/asset/font/Brush\ King.otf');
+@import url('/asset/font/Retro\ Gaming.ttf');
+
+@font-face {
+    font-family: brushking;
+    src: url(/asset/font/Brush\ King.otf);
+}
+
+@font-face {
+    font-family: retrogaming;
+    src: url(/asset/font/Retro\ Gaming.ttf);
+}
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    width: 100%;
+}
+
+header{
+    width: 100%;
+    height: 100vh;
+    background-color: black;
+}
+
+.button-rules{
+    width: 100%;
+    height: 10% ;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.rules{
+    width: 10%;
+    height: 45px;
+    margin: 20px;
+    font-family: brushking;
+    color: black;
+    background: linear-gradient(to right, orange, rgb(255, 68, 0)) ;
+    border: 2mm ridge rgb(255, 68, 0);
+    transition: transform .2s;
+}
+
+.rules:hover{
+    transform: scale(1.1);
+    color: rgba(250, 250, 250);
+}
+
+
+.title{
+    margin-top: 40px;
+    width: 100%;
+    height: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+h1{
+    width: 80%;
+    font-size: 50px;
+    font-family: brushking; 
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(to right, orange,orangered,red );
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+h1 span{
+    font-size: 60px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+h1 span:last-child{
+    font-size: 50px;
+} 
+
+.play{
+    margin-top: 20px;
+    width: 100%;
+    height: 10%;
+    color: white;
+    font-size: 25px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.play a{
+    font-family: retrogaming;
+    background: linear-gradient(blue,rgb(0, 166, 255),white);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.play a:hover{
+    transition: tranform .2s;
+    transform: scale(1.3);
+    background: linear-gradient(blue,rgb(0, 166, 255),white);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.bottom-header{
+    margin-top: 50px;
+    width: 100%;
+    height: 10%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.bottom-header small{
+    color: white;
+    font-family: retrogaming;
+}
+
+.psodo{
+    background-color: black;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+}
+
+.psodo label{
+    font-size: 30px;
+    font-family: retrogaming;
+    background: linear-gradient(blue,rgb(0, 166, 255),white);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+
+#name{
+    height: 20px;
+    width: 20%;
+    border: solid 3px orangered;
+    background-color: chocolate;
+    /* color: white; */
+    font-family: retrogaming;
+}
+
+.psodo img{
+    width: 150px;
+    height: 200px;
+}
+
+.player-choice{
+    width: 100%;
+    height: 100vh;
+    background-image: url(/asset/img/background-perso.gif);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.div-center-perso{
+    margin: 40px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.img-selected{
+    width: 200px;
+    height: 300px;
+}
+
+.img-selected img{
+    width: 100%;
+    height: 80%;
+    background-color: black;
+    border: solid 2px orangered;
+}
+
+.img-selected p{
+    font-size: 25px;
+    font-family: retrogaming;
+    background: linear-gradient(blue,rgb(0, 166, 255),white);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.div-name-of-player{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: black;
+}
+
+
+.player-choice h2{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-top: 80px;
+        font-size: 30px;
+        font-family: brushking;
+        background: linear-gradient(to right, orange,orangered,red );
+        background-clip: text;
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+}
+
+.perso-select{
+    width: 100%;
+    height: 10%;
+}
+
+.div-img-perso{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
+
+.img-perso{
+    margin-right:150px ;
+    background-color: black;
+}
+
+.img-perso img{
+    border: solid 2px orangered;
+    width: 100px;
+    height: 100px;
+}
+
+.img-perso img:hover{
+    transition: transform .2s;
+    transform: scale(1.1);
+}
+
+.div-img-perso{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
+
+.div-img-map{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
+.img-map{
+    margin-right:150px ;
+    margin-bottom: 50px;
+    background-color: black;
+}
+
+.div-img-map button{
+    margin-bottom: 80px;
+}
+
+.img-map img{
+    border: solid 2px orangered;
+    width: 100px;
+    height: 100px;
+}
+
+.img-map img:hover{
+    transition: transform .2s;
+    transform: scale(1.1);
+}
+
+.map-choice{
+    width: 100%;
+    height: 100vh;
+    background-image: url(/asset/img/map-japon.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.map-choice h2{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 30px;
+    font-family: brushking;
+    background: linear-gradient(to right, orange,orangered,red );
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.div-img-map{
+    height: 75%;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+}
+
+.fight{
+    width: 100%;
+    height: 100vh;
+    background-image: url(/asset/img/map-dojo.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#fight-button-rule{
+    margin-bottom: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.life{
+    width: 100%;
+    height: 20%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.life img{
+    border: 2mm ridge rgba(0, 0, 0, 0.9);
+    height: 80px;
+    width: 80px;
+}
+
+.life p{
+    margin-top: 55px;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    font-family: retrogaming;
+    font-size: 35px;
+    color: red;
+}
+
+
+.left-pv{
+    margin-left: 20px;
+    gap: 5px;
+    width: 45%;
+    height: 100%;
+    display: flex;
+}
+
+.right-pv{
+    margin-right: 20px;
+    gap: 8px;
+    width: 45%;
+    height: 100%;
+    display: flex;
+    flex-direction: row-reverse;
+}
+
+.pv-bar {
+    position: relative;
+    width: 100%;
+    display: flex;
+    align-items: flex-end;
+}
+
+.pv, .restpv {
+    position: absolute;
+    width: 100%;
+    height: 30px;
+    border: 4px solid black;
+}
+
+
+.pv {
+    background-color: red;
+}
+
+.restpv {
+    background-color: yellow;
+    transition: width 0.2s ease-in-out;
+}
+
+.score{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-family: retrogaming;
+    font-size: 30px;
+    background: linear-gradient(red ,white);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.score p:first-child{
+    margin-left: 20px;
+}
+
+.score p:last-child{
+    margin-right: 20px;
+}
+
+.pfc-choice{
+    width: 90%;
+    height: 15%;
+    display: flex;
+    margin-left: 20px;
+    gap: 7px;
+}
+
+.pfc-choice img{
+    width: 60px;
+    height: 60px;
+    border: 2mm ridge rgba(0, 0, 0, 0.9);
+}
+
+.announcement{
+    position: absolute;
+    width: 100%;
+    height: 50%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.announcement p{
+    margin-left: 40px;
+    font-family:brushking;
+    font-size: 35px;
+    color: red;
+}
+
+.announcement div{
+    font-family: retrogaming;
+    font-size: 30px;
+    color: red;
+}
+
+.announcement div span{
+    margin-left: 10px;
+}
+
+.all-perso{
+    width: 100%;
+    height: 50%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.all-perso img{
+    width: 180px;
+    height: 280px;
+}
+
+.perso-player img{
+    margin-left: 20px;
+}
+
+.perso-computer img{
+    margin-right: 20px;
+}
+
+
